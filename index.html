@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Convertidor de dólares a otras Monedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Convertidor de dólares a otras Monedas</h2>
+        <form id="conversionForm">
+            <label for="montoUSD">Ingrese la cantidad en USD:</label>
+            <input type="number" id="montoUSD" step="0.00" required>
+            <label for="selectMoneda">Seleccione la moneda que desee:</label>
+            <select id="selectMoneda" required>
+                <option value="" disabled selected>Seleccione una moneda</option>
+                <!-- Las opciones se cargarán dinámicamente con JavaScript -->
+            </select>
+            <button type="submit">Convertir</button>
+        </form>
+        <div id="resultadoConversion">
+            <!-- Aquí se mostrará el resultado de la conversión -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
